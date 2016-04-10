@@ -1,23 +1,45 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Wubba Duckie Products</h1>
+<div class="jumbotron">
+  <h1>Wubba Duckie Products</h1>
+</div>
 
-<table class="container-fluid" id="table-style">
-<!-- <div class="col-lg-12 col-md-12 col-sm-6 col-xs-8">
+
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-sm-2 col-md-4">
+      <%= image_tag(product.image_url, class: "img-responsive", id: "product-photo") %>
+        <h1><%= product.name %></h1>
+        <p><%= product.description %></p>
+        <p><%= product.color %></p>
+        <p><%= product.price %></p>
+      </div><!-- /col -->
+    <% end %>
+  </div>
+</div>
+
+
+<table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Description</th>
       <th>Image url</th>
+      <th>Color</th>
+      <th>Price</th>
       <th colspan="3"></th>
     </tr>
-  </thead> -->
+  </thead>
   <tbody>
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
+        <td><%= product.color %></td>
+        <td><%= product.price %></td>
+
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,7 +47,6 @@
     <% end %>
   </tbody>
 </table>
-<!-- </div> -->
 </div>
 
 <br>
@@ -33,8 +54,4 @@
 <%= link_to 'New Product', new_product_path %>
 
 
-<%# paragraph_number = 1 %>
-<%# 5.times do %>
- <!--  <P>This is a paragraph number <%#= paragraph_number %></P> -->
-  <%# paragraph_number = paragraph_number + 1 %>
-  <%#end%>
+  
