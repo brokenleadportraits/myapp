@@ -50,7 +50,7 @@ class ProductsController < ApplicationController
       end
     end
   end
-
+ 
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy

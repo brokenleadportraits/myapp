@@ -17,3 +17,4 @@ Product.create(:image_url => "duck4.jpg", :name => "Bat Duck", :description => "
 Product.create(:image_url => "duck5.jpg", :name => "Spider Duck", :description => "Spider Duck can swim. Spiderman can't.", :color => "Red", :price => 12)
 
 Product.create(:image_url => "duck6.jpg", :name => "A Duck", :description => "It's a Duck. A wubba one. A wubba Duckie.", :color => "Yellow", :price => 1000)
+

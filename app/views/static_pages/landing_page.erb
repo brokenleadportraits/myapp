@@ -1,0 +1,13 @@
+
+<div class="jumbotron">
+	<h1>Featured Wubba Duckie:</h1>
+	<h3>Every month we feature a new Wubba one, just for you!</h3>
+</div>
+
+<div class="container-fluid">
+	<%= image_tag(@featured_product.image_url, class: "img-responsive", id: "product-photo") %>
+	<p><%= @featured_product.name %></p>
+	<p><%= @featured_product.description %></p>
+	<p><%= @featured_product.color %></p>
+	<p>$<%= @featured_product.price %></p>
+</div>
