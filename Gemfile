@@ -53,3 +53,5 @@ group :production do
 	gem 'rails_12factor'
 	gem 'pg'
 end
+
+gem 'hirb','~> 0.7.3'

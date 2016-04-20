@@ -1,3 +1,8 @@
+<div class="jumbotron">
+	<h1>Featured Wubba Duckie:</h1>
+	<h3>Every month we feature a new Wubba one, just for you!</h3>
+</div>
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -7,17 +12,17 @@
   </ol>
 
   <!-- Wrapper for slides -->
-   <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
-    <div class="item">
-      <%= image_tag(product.image_url) %>
-      <div class="carousel-caption">
+  	<div class="item<%= " active" if product == @products.first %>">
+      <%= image_tag(product.image_url, class: "img-responsive", id: "product-photo") %>
+    	<div class="carousel-caption">
         <%= product.name %>
-      </div>
-        </div>
+      	</div>
+    </div>
     <% end %>
   </div>
-  </div>
+
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -31,17 +36,12 @@
 </div>
 
 
+   <!-- SEEMS TO CONFLICT BELOW -->
 
-
-<div class="jumbotron">
-	<h1>Featured Wubba Duckie:</h1>
-	<h3>Every month we feature a new Wubba one, just for you!</h3>
-</div>
-
-<div class="container-fluid">
-	<%= image_tag(@featured_product.image_url, class: "img-responsive", id: "product-photo") %>
-	<p><%= @featured_product.name %></p>
-	<p><%= @featured_product.description %></p>
-	<p><%= @featured_product.color %></p>
-	<p>$<%= @featured_product.price %></p>
-</div>
+<!-- <div class="container-fluid">
+	<%#= image_tag(@featured_product.image_url, class: "img-responsive", id: "product-photo") %>
+	<p><%#= @featured_product.name %></p>
+	<p><%#= @featured_product.description %></p>
+	<p><%#= @featured_product.color %></p>
+	<p>$<#%= @featured_product.price %></p>
+</div> -->
