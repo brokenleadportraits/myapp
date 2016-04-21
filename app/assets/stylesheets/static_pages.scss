@@ -11,17 +11,28 @@ h1, h2, h3, h4, p {
 	font-size: 0.9em;
 }
 
+nav {
+	padding: 10px;
+}
+
+
+.navbar-custom {
+    background-color: #FFF056;
+}
+
 footer {
 	text-align: center;
-	background-color: #ffffcc;
-	padding: 10px;
+	background-color: #FFF056;
+	padding: 30px;
+	margin-top: 50px;
 }
 
 body {
 	padding-top: 50px;
+	background-color: #FFFFFF;
 }
 
-#wubba1, #factory, #chick {
+#rubber1, #rubber2, #rubber4 {
 	width: 50%;
 	margin: 0 auto;
 }
@@ -29,3 +40,8 @@ body {
 #product-photo {
 	margin: 0 auto;
 }
+
+/*#feature-carousel {
+	z-index: 1;
+}*/
+

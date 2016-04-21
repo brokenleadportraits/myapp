@@ -1,18 +1,10 @@
 class StaticPagesController < ApplicationController
 
 
-
-
-   def landing_page
-    @products = Product.limit(3)
+  def landing_page
+    @products = Product.all
+    @featured_product = Product.fourth
   end
-
-
-# SEEMS TO CONFLICT WITH ABOVE AND landing_page , BELOW
-
-  # def landing_page
-  #   @featured_product = Product.fourth
-  # end
 
 
   def index
