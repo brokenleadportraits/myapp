@@ -1,14 +1,8 @@
-
+ 
 h1, h2, h3, h4, p {
 	font-family: "Times New Roman", Times, serif;
 	color: #a3a375;
 	text-align: center;
-}
-
-.jumbotron p {
-	font-family: "Times New Roman", Times, serif;
-	text-align: center;
-	font-size: 0.9em;
 }
 
 nav {
@@ -16,32 +10,81 @@ nav {
 }
 
 
-.navbar-custom {
-    background-color: #FFF056;
-}
-
 footer {
 	text-align: center;
-	background-color: #FFF056;
+	background-color: #191919;
+	/*background-color: #FFF056;*/
 	padding: 30px;
 	margin-top: 50px;
 }
 
 body {
 	padding-top: 50px;
-	background-color: #FFFFFF;
+	background-color: #FFF056;
+	/*background-image: url("water.jpg");*/
+	/*background-color: #FFFFFF;*/
 }
 
+
+.jumbotron p {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+
+ /*NAV BAR CUSTOM STYLE*/
+.navbar-custom {
+	background-color: #191919;
+    /*background-color: #FFF056;*/
+}
+
+
+/*STYLES FOR PHOTOS IN HOME, ABOUT AND CONTACT*/ 
 #rubber1, #rubber2, #rubber4 {
 	width: 50%;
 	margin: 0 auto;
 }
 
-#product-photo {
-	margin: 0 auto;
+
+/*LANDING PAGE FEATURED STYLES*/
+#featured-carousel {
+	max-width: 100%;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+#featured-header {
+	margin-top: 0px;
+	background-color: #FFF056;
 }
 
-/*#feature-carousel {
-	z-index: 1;
-}*/
+.featured-header-h1 {
+	background-color: #FFF056;
+	padding: 80px;
+}
 
+
+/*HOME PAGE STYLES*/
+#home-header {
+/*	margin-top: 0px;*/
+	background-image: url('water.jpg');
+}
+
+
+/*ABOUT PAGE STYLES*/
+#about-header {
+	background-color: #FFF056;
+	margin-top: 0px;
+}
+
+
+/*CONTACT PAGE STYLES*/
+#contact-header {
+	background-color: #FFF056;
+	margin-top: 0px;
+}
+
+#batduck {
+	/*margin-left: 900px;*/
+	margin: 0 auto;
+}
