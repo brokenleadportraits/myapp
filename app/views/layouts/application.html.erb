@@ -24,22 +24,22 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/static_pages/index">Home</a></li>
-        <li><a href="/static_pages/about">About</a></li>
-        <li><a href="/static_pages/contact">Contact</a></li>
+        <li><%= link_to "Home", static_pages_index_path %></li>
+        <li><%= link_to "About", static_pages_about_path %></li>
+        <li><%= link_to "Contact", static_pages_contact_path %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Duck products Here <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/products">Products</a></li>
+            <li><%= link_to "Products", products_path %></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/">Featured Duck?</a></li>
+            <li><%= link_to "Featured Duck", static_pages_landing_page_path %></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Duck Or Chicken?</a></li>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/orders">Place an Order</a></li>
+        <li><%= link_to "Place and Order", orders_path %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chickens <span class="caret"></span></a>
           <ul class="dropdown-menu">
