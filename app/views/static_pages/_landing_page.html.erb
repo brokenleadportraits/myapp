@@ -1,8 +1,10 @@
  
-<div class="col-md-12 col-sm-12" id="batduck">
-	<%= image_tag(@featured_product.image_url, class: "img-responsive", id: "product-photos") %>
-	<p><%= @featured_product.name %></p>
-	<p><%= @featured_product.description %></p>
-	<p><%= @featured_product.color %></p>
-	<p>$<%= @featured_product.price %></p> 
+<div class="container-fluid" id="featured-product">
+	<div class="col-md-4-offset-4">
+		<%= image_tag(@featured_product.image_url, class: "img-responsive", id: "product-photos") %>
+		<p><%= @featured_product.name %></p>
+		<p><%= @featured_product.description %></p>
+		<p><%= @featured_product.color %></p>
+		<p>$<%= @featured_product.price %></p> 
+	</div>
 </div>
