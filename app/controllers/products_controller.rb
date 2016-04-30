@@ -6,10 +6,10 @@ class ProductsController < ApplicationController
   def index
     if params[:q]
       search_term = params[:q]
-      @products = Product.where("name LIKE ?", "%#{search_term}%")
-      @products = Product.where("description LIKE ?", "%#{search_term}%")
-      @products = Product.where("color LIKE ?", "%#{search_term}%")
-      @products = Product.where("price LIKE ?", "%#{search_term}%")
+      @products = Product.where("name LIKE ? or description LIKE ? or color LIKE ? or price LIKE ?", "%#{search_term}%", "%#{search_term}%", "%#{search_term}%", "%#{search_term}%")
+      # @products = Product.where("description LIKE ?", "%#{search_term}%")
+      # @products = Product.where("color LIKE ?", "%#{search_term}%")
+      # @products = Product.where("price LIKE ?", "%#{search_term}%")
     else
     @products = Product.all
     end
