@@ -29,23 +29,31 @@
       </a>
     </div>
   </div>
-</div>
-<div class="container-fluid">
-  <div class="jumbotron" id="featured-header">
-    <h1>Featured Wubba Duckie:</h1> 
-    <h3>Every month we feature a new Wubba one, just for you!</h3>
-  </div>
-</div>
-<div class="container-fluid">
-  <div class="featured-header-h1">
-    <h1>This month we are proud to feature:</h1>
-  </div>
-</div>
-  <div class="container-fluid" id="featured-product">
-    <div class="row">
-	     <%= render @featured_product %>
+
+  <div class="container-fluid">
+    <div class="jumbotron" id="featured-header">
+      <h1>Featured Wubba Duckie:</h1> 
+      <h3>Every month we feature a new Wubba one, just for you!</h3>
     </div>
   </div>
+
+  <div class="container-fluid" id="featured-product">
+    <div class="featured-header-h1">
+      <h1>This month we are proud to feature:</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <%#= image_tag("rsz_featured2.jpg", class: "img-responsive", id: "thanks2-img") %>
+      </div>
+
+      <%= render @featured_product %>
+      
+      <div class="col-md-4">
+          <%#= image_tag("rsz_featured3.jpg", class: "img-responsive", id: "thanks2-img") %>
+      </div>
+    </div>
+  </div>
+
 
 <%#= params[:example_key] %>
 <%#= params[:example_key].to_i * 10 %>

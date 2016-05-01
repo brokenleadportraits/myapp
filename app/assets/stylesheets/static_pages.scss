@@ -59,10 +59,16 @@ body {
 }
 
 .featured-header-h1 {
-	background-color: #FFF056;
 	padding: 80px;
 }
 
+#featured-product {
+	background-image: url('featured-img.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/*background-attachment: fixed;*/
+}
 
 /*HOME PAGE STYLES*/
 #home-header {
@@ -84,6 +90,21 @@ body {
 	margin-top: 0px;
 }
 
-#featured-product {
+#contact-form {
+	margin-top: 20px;
+}
+
+
+/*THANK_YOU STYLES*/
+#thank-you-page {
+	display: inline;
+}
+
+#thanks2-img {
+	margin: 0 auto;
 	
+}
+
+#thanks-img {
+	margin: 0 auto;
 }

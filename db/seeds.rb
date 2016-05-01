@@ -10,7 +10,7 @@ Product.create(:image_url => "duck1.jpg", :name => "Basic Duckie", :description 
 
 Product.create(:image_url => "duck2.jpg", :name => "Wubba Cluckie", :description => "Duck or chicken? You decide.", :color => "Brown", :price => 8)
 
-Product.create(:image_url => "duck3.png", :name => "Luckie Duckie", :description => "Someone just got lucky with tis Wubba Duckie!", :color => "Pink", :price => 10)
+Product.create(:image_url => "duck3.png", :name => "Luckie Duckie", :description => "Someone just got lucky with this Wubba Duckie!", :color => "Pink", :price => 10)
 
 Product.create(:image_url => "duck4.jpg", :name => "Bat Duck", :description => "The hero your bath deserves!", :color => "Black", :price => 12)
 

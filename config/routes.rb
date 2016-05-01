@@ -1,25 +1,31 @@
 Rails.application.routes.draw do
 
-  resources :products
+
+  root 'products#index'
+
+  get 'static_pages/index' 
+
   get 'static_pages/about' 
 
   get 'static_pages/contact'
 
-  get 'static_pages/index' 
+  post 'static_pages/thank_you'
 
   get 'static_pages/landing_page'
 
- 
+  get 'static_pages/thank_you'
+
+  
+  resources :products
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'products#index'
+  # root 'products#index'
 
 
   resources :orders, only: [:index, :show, :create, :destroy]
-
 
 
   
