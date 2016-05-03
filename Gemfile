@@ -55,3 +55,5 @@ group :production do
 end
 
 gem 'hirb','~> 0.7.3'
+
+gem 'devise'
