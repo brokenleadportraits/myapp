@@ -62,11 +62,23 @@
   </div><!--end container-fluid -->
 </nav><!-- end navbar -->
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<% if notice %>
+  <div class="alert alert-danger" id="notice" role="alert">
+    <h1>HOLD IT BUD!</h1>
+    <p><%= notice %></p>
+  </div>
+<% end %>
+
+<% if alert %>
+  <div class="alert alert-danger" id="alert" role="alert">
+    <h1>HOLD IT BUD!</h1>
+    <p><%= alert %></p>
+  </div>
+<% end %>
 
 
 <%= yield %>
+
  
 <footer> &copy; 2016 The Glabes </footer>
 </body>
