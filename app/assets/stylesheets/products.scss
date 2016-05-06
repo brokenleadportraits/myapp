@@ -3,22 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
  
 
-/*#table-style th, td {
-
-	height: 100px;
-	border: inset;
-	font-family: "Times New Roman", Times, serif;
-	padding: 20px;
-	background-color: #a3a375;
-}*/
-
 
 #product-photos {
 	margin: 0 auto;
 }
 
 
-.jumbotron {
+#product-jumbotron-header {
 	/*font-family: 'Amatic SC', cursive;*/
 	font-family: "Times New Roman", Times, serif;
 	background-color: #ffff99;
@@ -29,4 +20,17 @@
 #product-form {
 	text-align: center;
 	padding-top: 30px;
+}
+
+#comments-description {
+	text-align: center;
+	padding-top: 30px;
+}
+
+#comments-row {
+	padding-top: 50px;
+}
+
+.rated, .rating {
+	text-align: center;
 }
