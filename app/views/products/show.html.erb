@@ -31,6 +31,10 @@
     <div class="col-md-3">
       <div class="comments">
         <%= render 'comments' %>
+      <div class="digg_pagination">
+        <%= will_paginate @comments %>
+        <%#= will_paginate @comments, :page_links => false %>
+      </div>
         <%= render 'new_comment' %>
       </div>
     <div class="col-md-3">

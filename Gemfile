@@ -59,3 +59,5 @@ gem 'hirb','~> 0.7.3'
 gem 'devise'
 
 gem 'cancancan', '~> 1.10'
+
+gem 'will_paginate', '~> 3.0.5'
