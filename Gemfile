@@ -39,6 +39,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  #Rspec
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
@@ -61,3 +63,4 @@ gem 'devise'
 gem 'cancancan', '~> 1.10'
 
 gem 'will_paginate', '~> 3.0.5'
+
