@@ -1,14 +1,16 @@
  
 <div class="col-sm-2 col-md-4">
-	<%= image_tag(product.image_url, class: "img-responsive", id: "product-photos") %>
+	<%= link_to(image_tag(product.image_url, class: "img-responsive", id: "product-photos"), product) %>
 	<h1><%= product.name %></h1>
 	<p><%= product.description %></p>
 	<p><%= product.color %></p>
 	<p>$<%= product.price %></p>
 	<p>
-		<button type="button" class="btn btn-info"><%= link_to 'Show', product %></button>
-		<button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_product_path(product) %></button>
-		<button type="button" class="btn btn-danger"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+		<% if signed_in? && current_user.admin? %>
+			<button type="button" class="btn btn-info"><%= link_to 'View this product', product %></button>
+			<button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_product_path(product) %></button>
+			<button type="button" class="btn btn-danger"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+		<% end %>
 	</p> 
 </div>
  
