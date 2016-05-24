@@ -28,6 +28,7 @@
       <%= form_tag "/payments/create" do %>
       <p>
           <%= render partial: "shared/stripe_checkout_button" %>
+          <%#= hidden_field_tag(:product_id) %>
         <% end %>
       </p>
       <% if signed_in? && current_user.admin? %>
