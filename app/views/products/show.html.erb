@@ -31,6 +31,7 @@
           <%#= hidden_field_tag(:product_id) %>
         <% end %>
       </p>
+
       <% if signed_in? && current_user.admin? %>
         <p><%= link_to 'Edit', edit_product_path(@product) %></p>
       <% end %>
@@ -40,17 +41,17 @@
     <div class="col-md-3">
       <div class="comments">
         <%= render 'comments' %>
-      <div class="digg_pagination">
-        <%= will_paginate @comments %>
-        <%#= will_paginate @comments, :page_links => false %>
+          <div class="digg_pagination">
+            <%= will_paginate @comments %>
+            <%#= will_paginate @comments, :page_links => false %>
+          </div>
+            <%= render 'new_comment' %>
       </div>
-        <%= render 'new_comment' %>
+      <div class="col-md-3">
       </div>
-    <div class="col-md-3">
+      <p id="notice"><%= notice %></p>
+    </div>
   </div>
-  <p id="notice"><%= notice %></p>
-</div>
-</div>
 </div>
  
 

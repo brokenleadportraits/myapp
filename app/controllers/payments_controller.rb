@@ -1,5 +1,6 @@
 class PaymentsController < ApplicationController
 	def create
+		# byebug
 		# Get the credit card details submitted by the form
 		@product = Product.find(params[:product_id])
 		@user = current_user
@@ -24,6 +25,6 @@ class PaymentsController < ApplicationController
 		  err = body[:error]
 		  flash[:alert] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
 		  redirect_to product_path(@product)
+			end
 		end
 	end
-end
