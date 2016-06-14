@@ -13,6 +13,7 @@ class ProductsController < ApplicationController
       # @products = Product.where("color LIKE ?", "%#{search_term}%")
       # @products = Product.where("price LIKE ?", "%#{search_term}%")
     else
+      #byebug
     @products = Product.all
     end
   end
