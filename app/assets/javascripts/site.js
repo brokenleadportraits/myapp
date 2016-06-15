@@ -6,4 +6,6 @@ $(document).on('ready page:load', function(){
         return $(this).attr('data-score');
       }
     });
+
+ 	$('.img-zoom').elevateZoom({scrollZoom : true, tint:true, tintOpacity:0.5});
 });
