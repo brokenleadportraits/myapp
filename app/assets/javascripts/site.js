@@ -7,5 +7,11 @@ $(document).on('ready page:load', function(){
       }
     });
 
- 	$('.img-zoom').elevateZoom({scrollZoom : true, tint:true, tintOpacity:0.5});
+ 	$('.img-zoom').elevateZoom({
+   		constrainType:"height",
+   		constrainSize:274,
+   		zoomType: "lens",
+   		containLensZoom: true,
+   		scrollZoom: true,
+ 	});
 });
