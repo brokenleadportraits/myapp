@@ -1,5 +1,6 @@
  
 <div class="col-sm-2 col-md-4">
+<% cache product do %>
 	<%= link_to(image_tag(product.image_url, class: "img-responsive", id: "product-photos"), product) %>
 	<h1><%= product.name %></h1>
 	<p><%= product.description %></p>
@@ -12,5 +13,6 @@
 			<button type="button" class="btn btn-danger"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></button>
 		<% end %>
 	</p> 
+<% end %>
 </div>
  
