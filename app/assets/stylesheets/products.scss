@@ -7,6 +7,7 @@
 }
 
 #product-photos {
+  border: inset;
 	margin: 0 auto;
 }
 
@@ -14,10 +15,10 @@
 #product-jumbotron-header {
 	/*font-family: 'Amatic SC', cursive;*/
 	font-family: "Times New Roman", Times, serif;
-	background-color: #ffff99;
+	/*background-color: #ffff99;*/
 	max-width: 100%;
 }
-
+ 
 
 #product-form {
 	text-align: center;

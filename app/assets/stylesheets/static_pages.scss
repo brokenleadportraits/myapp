@@ -1,7 +1,7 @@
  
 h1, h2, h3, h4, p {
 	font-family: "Times New Roman", Times, serif;
-	color: #a3a375;
+	color: #0f0f0a;
 	text-align: center;
 }
 
@@ -20,7 +20,7 @@ footer {
 
 body {
 	padding-top: 50px;
-	background-color: #FFF056;
+	background-color: #ffffe6;
 	/*background-image: url("water.jpg");*/
 	/*background-color: #FFFFFF;*/
 }
@@ -33,6 +33,7 @@ body {
 }
 
 
+
  /*NAV BAR CUSTOM STYLE*/
 .navbar-custom {
 	background-color: #191919;
@@ -40,11 +41,105 @@ body {
 }
 
 
-/*STYLES FOR PHOTOS IN HOME, ABOUT AND CONTACT*/ 
-#rubber1, #rubber2, #rubber4 {
-	width: 50%;
-	margin: 0 auto;
+
+/*HOME PAGE STYLES*/
+
+#rubber1{
+  	width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
+#home-header h1{
+  	font: 400 60px/1.3 'Bevan', Georgia, serif;
+  	text-align: center;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    font-size: 9em;
+    width: 100%;
+    height: 26px;
+    text-align: center;
+}
+
+#home-header h2, p {
+  	font: 'Pontano Sans', Verdana, Helvetica, sans-serif;
+  	font-size: 30px;
+  	text-align: center;
+}
+
+
+
+/*ABOUT PAGE STYLES*/
+
+#rubber2{
+  	width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#about-header h1{
+  	font: 400 60px/1.3 'Bevan', Georgia, serif;
+  	text-align: center;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    font-size: 8em;
+    width: 100%;
+    height: 26px;
+}
+
+#about-header h2, p {
+  	font: 400 60px/1.6 'Pontano Sans', Verdana, Helvetica, sans-serif;
+  	font-size: 1.5em;
+  	text-align: center;
+}
+
+
+
+/*CONTACT PAGE STYLES*/
+
+#rubber3{
+  	width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#contact-header h1{
+  	font: 400 60px/1.3 'Bevan', Georgia, serif;
+  	text-align: center;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    font-size: 8em;
+    width: 100%;
+    height: 26px;
+}
+
+#contact-header h2, p {
+  	font: 400 60px/1.6 'Pontano Sans', Verdana, Helvetica, sans-serif;
+  	font-size: 1.5em;
+  	text-align: center;
+}
+
+#contact-form {
+	margin-top: 20px;
+}
+
+.contact-us h1 {
+	font: 400 60px/1.3 'Bevan', Georgia, serif;
+  	text-align: center;
+}
+
 
 
 /*LANDING PAGE FEATURED STYLES*/
@@ -70,30 +165,10 @@ body {
 	/*background-attachment: fixed;*/
 }
 
-/*HOME PAGE STYLES*/
-#home-header {
-/*	margin-top: 0px;*/
-	background-image: url('water.jpg');
-}
 
-
-/*ABOUT PAGE STYLES*/
-#about-header {
-	background-color: #FFF056;
-	margin-top: 0px;
-}
-
-
-/*CONTACT PAGE STYLES*/
-#contact-header {
-	background-color: #FFF056;
-	margin-top: 0px;
-}
-
-#contact-form {
-	margin-top: 20px;
-}
  
+
+
 
 /*THANK_YOU STYLES*/
 #thank-you-page {

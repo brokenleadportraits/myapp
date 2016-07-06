@@ -1,12 +1,14 @@
 
 <div class="container-fluid">
-	<div class="jumbotron" id="contact-header">
+	<div class="contact" id="contact-header">
 		<%= image_tag("rubber2.jpg", class: "img-responsive", id: "rubber2") %>
 		<h1> Where to Find us?</h1>
-		<h2>We were once located on a giant farm, near a coop..I mean, duck pond, yeah..duck pond, a couple of years back.</h2>
-		<h3>Now...oh..now? One of them big ol' factories. Couple'a badasses on the doors. <br>Packing.</br></h3>
+		<h2>We used to be located on a giant farm, near a coop..I mean, duck pond. Yeah..a duck pond.</h2>
+		<h2>Oh, now? A big ol' factory. Couple'a badasses on the doors.... <br>Packing.</br></h2>
 	</div>
-	<h1>Go on..Dares ya! Contact Us.</h1>
+	<div class="contact-us">
+		<h1>Go on..Dares ya! Contact Us.</h1>
+	</div>
 </div>
 
 <%= flash[:notice] %>
@@ -15,8 +17,8 @@
 	<div class="row">
 	  <div class="col-md-4 col-md-offset-4">
 	    <div class="form-group">
-	      <%= label_tag :name, "Name" %>
-	      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+	    	<%= label_tag :name, "Name" %>
+	    	<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
 	    </div>      
 	    <div class="form-group">
 	      <%= label_tag :email, "Email Address" %>
@@ -31,4 +33,4 @@
 	 	</div>
 	</div>
 </div>
-
+ 
