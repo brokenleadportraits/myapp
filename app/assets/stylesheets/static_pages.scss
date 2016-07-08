@@ -21,8 +21,6 @@ footer {
 body {
 	padding-top: 50px;
 	background-color: #ffffe6;
-	/*background-image: url("water.jpg");*/
-	/*background-color: #FFFFFF;*/
 }
 
 
@@ -43,8 +41,7 @@ body {
 
 
 /*HOME PAGE STYLES*/
-
-#rubber1{
+#rubber1, #rubber2, #rubber3 {
   	width: 100%;
     height: 100%;
     max-height: 100%;
@@ -53,7 +50,7 @@ body {
     position: relative;
 }
 
-#home-header h1{
+#home-header h1 {
   	font: 400 60px/1.3 'Bevan', Georgia, serif;
   	text-align: center;
     z-index: 2;
@@ -74,17 +71,7 @@ body {
 
 
 /*ABOUT PAGE STYLES*/
-
-#rubber2{
-  	width: 100%;
-    height: 100%;
-    max-height: 100%;
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-#about-header h1{
+#about-header h1 {
   	font: 400 60px/1.3 'Bevan', Georgia, serif;
   	text-align: center;
     z-index: 2;
@@ -104,17 +91,7 @@ body {
 
 
 /*CONTACT PAGE STYLES*/
-
-#rubber3{
-  	width: 100%;
-    height: 100%;
-    max-height: 100%;
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-#contact-header h1{
+#contact-header h1 {
   	font: 400 60px/1.3 'Bevan', Georgia, serif;
   	text-align: center;
     z-index: 2;
@@ -148,12 +125,20 @@ body {
 	margin-top: 20px;
 	margin-bottom: 0px;
 }
+
 #featured-header {
+	background-color: #ffffe6;
+} 
+
+#featured-header h1  {
+	font: 400 60px/1.3 'Bevan', Georgia, serif;
 	margin-top: 0px;
-	background-color: #FFF056;
+	background-color: #ffffe6;
 }
 
-.featured-header-h1 {
+.featured-header-month h2 {
+	font: 300 50px/1.3 'Bevan', Georgia, serif;
+	color: #ffcccc;
 	padding: 80px;
 }
 
@@ -162,11 +147,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	/*background-attachment: fixed;*/
 }
-
-
- 
 
 
 
@@ -176,8 +157,7 @@ body {
 }
 
 #thanks2-img {
-	margin: 0 auto;
-	
+	margin: 0 auto;	
 }
 
 #thanks-img {
