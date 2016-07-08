@@ -1,5 +1,5 @@
  
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	text-align: center;
 }
 
@@ -160,4 +160,22 @@ body {
 
 #thanks-img {
 	margin: 0 auto;
+}
+
+
+.orders-header h1 {
+  padding-top: 50px;
+  font: 400 60px/1.3 'Bevan', Georgia, serif;
+  text-align: center;
+}
+
+.orders-header h2 {
+  padding-bottom: 50px;
+  font: 300 50px/1.6 'Pontano Sans', Verdana, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.form-inline {
+  text-align: center;
+  padding: 10px;
 }
