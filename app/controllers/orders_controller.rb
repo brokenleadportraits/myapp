@@ -11,9 +11,9 @@ class OrdersController < ApplicationController
 
 	def show
 		@order = Order.find(params[:id]).to_json(:include => [{:product => {:only => :name}}, {:user => {:only => :email}}])
-    	respond_with @order
+    respond_with @order
 	end
-
+ 
 	def new
 	end
 
@@ -33,8 +33,9 @@ class OrdersController < ApplicationController
 	end
 
 	private
-
+	
     def order_params
-      params.require(:order).permit(:user_id, :product_id, :total)
+    	params.require(:order).permit(:user_id, :product_id, :total)
     end
 end
+
