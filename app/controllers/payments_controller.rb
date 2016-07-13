@@ -3,7 +3,7 @@ class PaymentsController < ApplicationController
 		# byebug
 		# Get the credit card details submitted by the form
 		@product = Product.find(params[:product_id])
-		@user = current_user
+		# @user = current_user
 		token = params[:stripeToken]
 		
 		# Create the charge on Stripe's servers - this will charge the user's card
@@ -15,9 +15,7 @@ class PaymentsController < ApplicationController
 		    :description => params[:stripeEmail],
 		  )
 
-		  	if charge.paid
-		  		Order.create(user_id: @user.id, product_id: @product.id, total: @product.price)
-		  		redirect_to product_path(@product)
+		  		Order.create() if charge.paid
 		end 
 
 		rescue Stripe::CardError => e
