@@ -6,9 +6,6 @@ Rails.application.routes.draw do
   resources :products do
     resources :comments
   end
-
-  resources :payments, only: [:create]
-
   resources :users
 
   root 'static_pages#index'
