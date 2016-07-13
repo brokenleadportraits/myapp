@@ -15,7 +15,7 @@ class ProductsController < ApplicationController
           # @products = Product.where("color LIKE ?", "%#{search_term}%")
           # @products = Product.where("price LIKE ?", "%#{search_term}%")
         else
-          @products = Product.where("name ILIKE ? or description ILIKE ? or color ILIKE ? or price ILIKE ?", "%#{search_term}%", "%#{search_term}%", "%#{search_term}%", "%#{search_term}%")
+          @products = Product.where("name ILIKE ? or description ILIKE ? or color ILIKE ?", "%#{search_term}%", "%#{search_term}%", "%#{search_term}%")
         end
     else
     #byebug
